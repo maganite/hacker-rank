@@ -1,43 +1,53 @@
-//Conditional Statements
+//for loop
 
 #include<iostream>
 using namespace std;
 int main()
 {
-    int n;
-    cin>>n;
-    if(n>=1 && n<=9)
+    int a,b;
+    cin>>a;
+    cin>>b;
+
+    for(int i=a;i<=b;i++)
     {
-        if(n==1){
-            cout<<"one";
+        if(i==1){
+            cout<<"one"<<endl;
         }
-        else if(n==2){
-            cout<<"two";
+        else if(i==2){
+            cout<<"two"<<endl;
         }
-        else if(n==3){
-            cout<<"three";
+        else if(i==3){
+            cout<<"three"<<endl;
         }
-        else if(n==4){
-            cout<<"four";
+        else if(i==4){
+            cout<<"four"<<endl;
         }
-        else if(n==5){
-            cout<<"five";
+        else if(i==5){
+            cout<<"five"<<endl;
         }
-        else if(n==6){
-            cout<<"six";
+        else if(i==6){
+            cout<<"six"<<endl;
         }
-        else if(n==7){
-            cout<<"seven";
+        else if(i==7){
+            cout<<"seven"<<endl;
         }
-        else if(n==8){
-            cout<<"eight";
+        else if(i==8){
+            cout<<"eight"<<endl;
         }
-        else if(n==9){
-            cout<<"nine";
+        else{
+            cout<<"nine"<<endl;
+            break;
         }
     }
-    else{
-        cout<<"Greater than 9";
+
+    for(int i=10;i<=b;i++)
+    {
+        if(i%2==0){
+            cout<<"even"<<endl;
+        }
+        else{
+            cout<<"odd"<<endl;
+        }
     }
    return 0;
 }
